@@ -49,11 +49,11 @@ function App() {
         responseTime: '<200ms'
       },
       images: [
-        'Images/1.png',
-        'Images/2.png',
-        'Images/3.png',
-        'Images/4.png',
-        'Images/5 copy.png'
+        'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpg?auto=compress&cs=tinysrgb&w=1200'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Movie-recommendation-system-main'
@@ -77,10 +77,10 @@ function App() {
         uptime: '99.9%'
       },
       images: [
-        'Images/DB1.jpg',
-        'Images/DB2.jpg',
-        'Images/DB3.jpg',
-        'Images/DB6.jpg'
+        'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpg?auto=compress&cs=tinysrgb&w=1200',
+        'https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpg?auto=compress&cs=tinysrgb&w=1200'
       ],
       demoUrl: '#',
       codeUrl: '#'
