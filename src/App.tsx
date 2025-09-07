@@ -229,7 +229,7 @@ function App() {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-l font-bold text-gray-900">Ahmed Mamdouh El Najjar</div>
+            <div className="text-xl font-bold text-gray-900">Ahmed Mamdouh El Najjar</div>
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-blue-600 transition-colors">About</button>
               <button onClick={() => scrollToSection('skills')} className="text-gray-600 hover:text-blue-600 transition-colors">Skills</button>
@@ -253,7 +253,7 @@ function App() {
         </div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-7xl font-bold text-gray-900 mb-6">
             Ahmed Mamdouh <span className="text-blue-600">El Najjar</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
