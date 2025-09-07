@@ -32,21 +32,23 @@ function App() {
   const projects = [
     {
       id: 'recommendation-engine',
-      title: 'AI-Powered Recommendation Engine',
-      shortDescription: 'Built a collaborative filtering recommendation system that suggests personalized content based on user preferences.',
-      fullDescription: 'Developed a sophisticated recommendation system using collaborative filtering techniques and K-Nearest Neighbors (KNN) algorithm. The system processes user interaction data, handles sparse matrices efficiently, and provides real-time personalized recommendations. Implemented data preprocessing pipelines to clean and normalize user behavior data, feature engineering for better model performance, and deployed the model as a REST API using Flask.',
-      technologies: ['Python', 'KNN', 'Flask', 'Pandas', 'NumPy', 'Scikit-learn'],
+      title: 'Movie Collaborative Recommendation System',
+      shortDescription: 'A movie recommendation system using collaborative filtering to suggest films based on user preferences and previous ratings.',
+      fullDescription: 'This project implements a comprehensive movie recommendation system using collaborative filtering to suggest films based on user preferences and previous ratings. The system is divided into two main components: Data Preprocessing & Model Training, and a User Interface built with Flask. The data preprocessing involves cleaning raw datasets (movies.csv, ratings.csv), creating pivot tables mapping users to movie ratings, handling missing values, and filtering out low-activity users/movies. The system converts datasets into sparse matrices for efficiency and trains a K-Nearest Neighbors (KNN) model with cosine similarity to identify similar movies. The Flask-based UI allows users to enter a movie title and receive 10 personalized recommendations displayed dynamically.',
+      technologies: ['Python', 'Flask', 'KNN', 'Pandas', 'NumPy', 'Scikit-learn', 'HTML', 'Matplotlib', 'Scipy'],
       features: [
-        'Collaborative filtering algorithm implementation',
+        'Data preprocessing and cleaning of raw movie datasets',
+        'User-movie pivot table creation with missing value handling',
         'Sparse matrix optimization for memory efficiency',
-        'Real-time recommendation API',
-        'User behavior analysis and preprocessing',
-        'A/B testing framework for model evaluation'
+        'KNN model training with cosine similarity',
+        'Flask web interface for movie recommendations',
+        'Model serialization using Pickle for reuse',
+        'Dynamic recommendation display system'
       ],
       metrics: {
-        accuracy: '92%',
-        
-        responseTime: '<200ms'
+        recommendations: '10 movies',
+        algorithm: 'KNN + Cosine Similarity',
+        interface: 'Flask Web App'
       },
       images: [
         '/images/1.png',
@@ -60,31 +62,33 @@ function App() {
     },
     {
       id: 'database-management',
-      title: 'Database Management & Optimization',
-      shortDescription: 'Designed and implemented structured databases with optimized queries and relationships for various applications.',
-      fullDescription: 'Created comprehensive database solutions for multiple clients, focusing on efficient schema design, query optimization, and data integrity. Implemented complex relationships, indexing strategies, and stored procedures to ensure optimal performance. Worked with SQL database, designing scalable architectures that handle high-volume transactions while maintaining data consistency.',
-      technologies: ['SQL', 'PostgreSQL', 'MySQL', 'Schema Design', 'Query Optimization', 'Indexing', 'PHP'],
+      title: 'Gym Management System',
+      shortDescription: 'A comprehensive web-based database-driven application designed to streamline and automate daily operations of a fitness center.',
+      fullDescription: 'The Gym Management System is a web-based database-driven application designed to streamline and automate the daily operations of a fitness center. The project leverages MySQL for database management and PHP for backend integration, ensuring efficient storage, retrieval, and manipulation of gym-related data. The main objective is to eliminate inefficiencies of manual record-keeping and provide a centralized platform where administrators, trainers, and members can interact seamlessly. The system ensures secure authentication for administrators, allows trainers to manage their clients effectively, and supports members in tracking their workouts, diets, and participation in gym activities. Built with normalized MySQL database to reduce redundancy and enforced with primary and foreign key constraints.',
+      technologies: ['MySQL', 'PHP', 'HTML', 'CSS', 'Database Design', 'SQL', 'CRUD Operations'],
       features: [
-        'Normalized database schema design',
-        'Complex query optimization (50% performance improvement)',
-        'Automated backup and recovery systems',
-        'Data migration and ETL processes',
-        'Performance monitoring and analytics'
+        'Secure admin authentication and management dashboard',
+        'Member Management: Register, update, search, and delete gym member records while maintaining trainer assignments and workout/diet tracking',
+        'Trainer Management: Add, update, or delete trainer profiles and oversee exercises, diet plans, and classes',
+        'Class Scheduling: Create and assign fitness classes with cost, duration, and member participation tracking',
+        'Diet & Exercise Tracking: Assign and monitor personalized routines for each member',
+        'Supplement Management: Maintain inventory, stock levels, categories, and expiration dates',
+        'Contact & Communication: Member inquiry and feedback system',
+        'Parameterized queries for SQL injection prevention'
       ],
       metrics: {
-        performance: '+85%',
-        
-        uptime: '99.9%'
+        database: 'MySQL Normalized',
+        security: 'SQL Injection Protected',
+        operations: 'Full CRUD Support'
       },
       images: [
-        'src/Images/DB1.jpg',
-        'src/Images/DB2.jpg',
-        'src/Images/DB3.jpg',
-        'src/Images/DB4.jpg',
-        'src/Images/DB5.jpg',
-        'src/Images/DB6.jpg',
-        'src/Images/DB7.jpg'
-        
+        '/images/DB1.jpg',
+        '/images/DB2.jpg',
+        '/images/DB3.png',
+        '/images/DB4.png',
+        '/images/DB5.png',
+        '/images/DB6.jpg',
+        '/images/DB7.jpg'
       ],
       demoUrl: '#',
       codeUrl: '#'
