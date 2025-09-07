@@ -276,7 +276,21 @@ function App() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-2 md:order-1">
+              <div className="relative">
+                <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/images/ahmed-profile.jpg" 
+                    alt="Ahmed Mamdouh El Najjar"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                  <User className="w-12 h-12 text-white" />
+                </div>
+              </div>
+            </div>
+            <div className="order-1 md:order-2">
               <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Hi, I'm Ahmed Mamdouh, a Data Scientist with a Computer Engineering background from Helwan University. 
@@ -288,30 +302,31 @@ function App() {
                 I'm passionate about creating impactful projects, from recommendation systems to predictive analytics, 
                 always with the goal of helping businesses and individuals make smarter decisions.
               </p>
-            </div>
-            <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-2xl">
-              <div className="flex items-center mb-4">
-                <User className="w-6 h-6 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Quick Facts</h3>
+              
+              <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-2xl mt-8">
+                <div className="flex items-center mb-4">
+                  <User className="w-6 h-6 text-blue-600 mr-3" />
+                  <h3 className="text-xl font-semibold text-gray-900">Quick Facts</h3>
+                </div>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Computer Engineering Student
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Freelance Data Scientist
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    AI & ML Specialist
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
+                    Database Design Expert
+                  </li>
+                </ul>
               </div>
-              <ul className="space-y-3 text-gray-600">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Computer Engineering Student
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Freelance Data Scientist
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  AI & ML Specialist
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Database Design Expert
-                </li>
-              </ul>
             </div>
           </div>
         </div>
