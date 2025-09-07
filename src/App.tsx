@@ -49,11 +49,11 @@ function App() {
         responseTime: '<200ms'
       },
       images: [
-        'src/Images/1.png',
-        'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=1200',
-        'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpg?auto=compress&cs=tinysrgb&w=1200',
-        'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpg?auto=compress&cs=tinysrgb&w=1200',
-        'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpg?auto=compress&cs=tinysrgb&w=1200'
+        '/images/1.png',
+        '/images/2.png',
+        '/images/3.png',
+        '/images/4.png',
+        '/images/5.png'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Movie-recommendation-system-main'
