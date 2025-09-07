@@ -82,7 +82,7 @@ function App() {
         operations: 'Full CRUD Support'
       },
       images: [
-        '/images/DB1.jpg',
+        'src/Images/DB1.jpg',
         '/images/DB2.jpg',
         '/images/DB3.png',
         '/images/DB4.png',
