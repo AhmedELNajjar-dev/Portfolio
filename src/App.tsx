@@ -77,10 +77,10 @@ function App() {
         uptime: '99.9%'
       },
       images: [
-        'https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpg?auto=compress&cs=tinysrgb&w=1200',
-        'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpg?auto=compress&cs=tinysrgb&w=1200',
-        'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpg?auto=compress&cs=tinysrgb&w=1200',
-        'https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpg?auto=compress&cs=tinysrgb&w=1200'
+        'src/Images/DB1.jpg',
+        'src/Images/DB2.jpg',
+        'src/Images/DB3.jpg',
+        'src/Images/DB4.jpg'
       ],
       demoUrl: '#',
       codeUrl: '#'
