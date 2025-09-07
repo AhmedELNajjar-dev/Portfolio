@@ -49,7 +49,7 @@ function App() {
         responseTime: '<200ms'
       },
       images: [
-        'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1200',
+        'src/Images/1.png',
         'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=1200',
         'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpg?auto=compress&cs=tinysrgb&w=1200',
         'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpg?auto=compress&cs=tinysrgb&w=1200',
