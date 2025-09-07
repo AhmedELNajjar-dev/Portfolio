@@ -51,11 +51,11 @@ function App() {
         interface: 'Flask Web App'
       },
       images: [
-        'src/Images/1.png',
-        'src/Images/2.png',
-        'src/Images/3.png',
-        'src/Images/4.png',
-        'src/Images/5.png'
+        '/images/1.png',
+        '/images/2.png',
+        '/images/3.png',
+        '/images/4.png',
+        '/images/5.png'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Movie-recommendation-system-main'
@@ -82,13 +82,13 @@ function App() {
         operations: 'Full CRUD Support'
       },
       images: [
-        'src/Images/DB1.jpg',
-        'src/Images/DB2.jpg',
-        'src/Images/DB3.png',
-        'src/Images/DB4.png',
-        'src/Images/DB5.png',
-        'src/Images/DB6.jpg',
-        'src/Images/DB7.jpg'
+        '/images/DB1.jpg',
+        '/images/DB2.jpg',
+        '/images/DB3.png',
+        '/images/DB4.png',
+        '/images/DB5.png',
+        '/images/DB6.jpg',
+        '/images/DB7.jpg'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Database-Gym-Management-System'
@@ -280,7 +280,7 @@ function App() {
               <div className="relative">
                 <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="src/Images/Personal_PIC.jpg" 
+                    src="/images/Personal_PIC.jpg" 
                     alt="Ahmed Mamdouh El Najjar"
                     className="w-full h-full object-cover"
                   />
