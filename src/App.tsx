@@ -83,12 +83,12 @@ function App() {
       },
       images: [
         'src/Images/DB1.jpg',
-        '/images/DB2.jpg',
-        '/images/DB3.png',
-        '/images/DB4.png',
-        '/images/DB5.png',
-        '/images/DB6.jpg',
-        '/images/DB7.jpg'
+        'src/images/DB2.jpg',
+        'src/images/DB3.png',
+        'src/images/DB4.png',
+        'src/images/DB5.png',
+        'src/images/DB6.jpg',
+        'src/images/DB7.jpg'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Database-Gym-Management-System'
