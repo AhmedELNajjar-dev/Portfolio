@@ -280,7 +280,7 @@ function App() {
               <div className="relative">
                 <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="/images/ahmed-profile.jpg" 
+                    src="src/Images/Personal_PIC.jpg" 
                     alt="Ahmed Mamdouh El Najjar"
                     className="w-full h-full object-cover"
                   />
