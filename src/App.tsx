@@ -80,7 +80,11 @@ function App() {
         'src/Images/DB1.jpg',
         'src/Images/DB2.jpg',
         'src/Images/DB3.jpg',
-        'src/Images/DB4.jpg'
+        'src/Images/DB4.jpg',
+        'src/Images/DB5.jpg',
+        'src/Images/DB6.jpg',
+        'src/Images/DB7.jpg'
+        
       ],
       demoUrl: '#',
       codeUrl: '#'
