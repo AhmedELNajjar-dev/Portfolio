@@ -51,11 +51,11 @@ function App() {
         interface: 'Flask Web App'
       },
       images: [
-        '/images/1.png',
-        '/images/2.png',
-        '/images/3.png',
-        '/images/4.png',
-        '/images/5.png'
+        'src/Images/1.png',
+        'src/Images/2.png',
+        'src/Images/3.png',
+        'src/Images/4.png',
+        'src/Images/5.png'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Movie-recommendation-system-main'
@@ -83,12 +83,12 @@ function App() {
       },
       images: [
         'src/Images/DB1.jpg',
-        'src/images/DB2.jpg',
-        'src/images/DB3.png',
-        'src/images/DB4.png',
-        'src/images/DB5.png',
-        'src/images/DB6.jpg',
-        'src/images/DB7.jpg'
+        'src/Images/DB2.jpg',
+        'src/Images/DB3.png',
+        'src/Images/DB4.png',
+        'src/Images/DB5.png',
+        'src/Images/DB6.jpg',
+        'src/Images/DB7.jpg'
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Database-Gym-Management-System'
