@@ -99,6 +99,13 @@ function App() {
   const ProjectModal = ({ project, onClose }: { project: typeof projects[0], onClose: () => void }) => {
     const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
     
+    // Close modal when clicking outside
+    const handleBackdropClick = (e: React.MouseEvent) => {
+      if (e.target === e.currentTarget) {
+        onClose();
+      }
+    };
+    
     const nextImage = () => {
       setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
     };
@@ -108,8 +115,19 @@ function App() {
     };
     
     return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div 
+      className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      onClick={handleBackdropClick}
+    >
       <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+        {/* Fixed close button */}
+        <button 
+          onClick={onClose}
+          className="fixed top-4 right-4 bg-white/90 hover:bg-white text-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition-colors shadow-lg z-10 text-xl font-bold"
+        >
+          ×
+        </button>
+        
         <div className="relative group">
           <img 
             src={project.images[currentImageIndex]} 
@@ -153,12 +171,6 @@ function App() {
             </>
           )}
           
-          <button 
-            onClick={onClose}
-            className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-800 w-8 h-8 rounded-full flex items-center justify-center transition-colors"
-          >
-            ×
-          </button>
         </div>
         
         <div className="p-8">
@@ -203,15 +215,26 @@ function App() {
           </div>
           
           <div className="flex gap-4">
-            <a 
-              href={project.demoUrl}
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center"
-            >
-              <ExternalLink className="w-4 h-4 mr-2" />
-              View Demo
-            </a>
+            {project.id === 'recommendation-engine' ? (
+              <div className="bg-blue-100 border border-blue-300 text-blue-800 px-6 py-3 rounded-lg font-semibold flex items-center">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Demo: Check GitHub repo documentation
+              </div>
+            ) : (
+              <a 
+                href={project.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                View Demo
+              </a>
+            )}
             <a 
               href={project.codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition-colors flex items-center"
             >
               <Github className="w-4 h-4 mr-2" />
