@@ -267,7 +267,7 @@ function App() {
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
         <div className="absolute inset-0">
-          <div
+<div
   className="absolute inset-0 bg-[url(\"data:image/svg+xml;utf8,<svg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><g fill='%23FFFFFF' fill-opacity='0.1'><circle cx='30' cy='30' r='1'/><circle cx='10' cy='10' r='0.5'/><circle cx='50' cy='10' r='0.5'/><circle cx='10' cy='50' r='0.5'/><circle cx='50' cy='50' r='0.5'/><circle cx='20' cy='30' r='0.3'/><circle cx='40' cy='30' r='0.3'/><circle cx='30' cy='15' r='0.3'/><circle cx='30' cy='45' r='0.3'/></g></g></svg>\")] opacity-80"
 />
 
