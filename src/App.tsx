@@ -617,7 +617,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+      <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-oklch(28.2% 0.091 267.935) relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-32 h-32 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -630,7 +630,7 @@ function App() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
-              href="mailto:ahmed.mamdouh.sadek@example.com" 
+              href="mailto:ahmedmamdouhelnajjar@hotmail.com" 
               className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center shadow-lg"
             >
               <Mail className="w-5 h-5 mr-2" />
