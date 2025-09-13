@@ -250,88 +250,90 @@ function App() {
     <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+      <nav className="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-700">
         <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <div className="text-xl font-bold text-gray-900">Ahmed Mamdouh El Najjar</div>
+            <div className="text-xl font-bold text-white">Ahmed Mamdouh El Najjar</div>
             <div className="hidden md:flex space-x-8">
-              <button onClick={() => scrollToSection('about')} className="text-gray-600 hover:text-blue-600 transition-colors">About</button>
-              <button onClick={() => scrollToSection('skills')} className="text-gray-600 hover:text-blue-600 transition-colors">Skills</button>
-              <button onClick={() => scrollToSection('projects')} className="text-gray-600 hover:text-blue-600 transition-colors">Projects</button>
-              <button onClick={() => scrollToSection('services')} className="text-gray-600 hover:text-blue-600 transition-colors">Services</button>
-              <button onClick={() => scrollToSection('contact')} className="text-gray-600 hover:text-blue-600 transition-colors">Contact</button>
+              <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-blue-400 transition-colors">About</button>
+              <button onClick={() => scrollToSection('skills')} className="text-gray-300 hover:text-blue-400 transition-colors">Skills</button>
+              <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-blue-400 transition-colors">Projects</button>
+              <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-blue-400 transition-colors">Services</button>
+              <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-blue-400 transition-colors">Contact</button>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
         <div className="absolute inset-0">
           <div
-  className="absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%233B82F6&quot; fill-opacity=&quot;0.05&quot;><circle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;2&quot;/><circle cx=&quot;10&quot; cy=&quot;10&quot; r=&quot;1&quot;/><circle cx=&quot;50&quot; cy=&quot;10&quot; r=&quot;1&quot;/><circle cx=&quot;10&quot; cy=&quot;50&quot; r=&quot;1&quot;/><circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;1&quot;/></g></g></svg>')] opacity-50"
+  className="absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23FFFFFF" fill-opacity="0.1"><circle cx="30" cy="30" r="1"/><circle cx="10" cy="10" r="0.5"/><circle cx="50" cy="10" r="0.5"/><circle cx="10" cy="50" r="0.5"/><circle cx="50" cy="50" r="0.5"/><circle cx="20" cy="30" r="0.3"/><circle cx="40" cy="30" r="0.3"/><circle cx="30" cy="15" r="0.3"/><circle cx="30" cy="45" r="0.3"/></g></g></svg>')] opacity-80"
 />
 
-          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-400/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-teal-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-blue-400/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-400/30 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
         </div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <h1 className="text-6xl md:text-6xl font-bold text-gray-900 mb-6">
-            Ahmed Mamdouh <span className="text-blue-600">El Najjar</span>
+            <span className="text-white">Ahmed Mamdouh</span> <span className="text-blue-400">El Najjar</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8">
             Data Scientist | Machine Learning & AI Developer
           </p>
           <button 
             onClick={() => scrollToSection('contact')}
-            className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+            className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-500 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 border border-blue-500/50"
           >
             Hire Me
           </button>
           
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <ChevronDown className="w-6 h-6 text-gray-400" />
+            <ChevronDown className="w-6 h-6 text-gray-300" />
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="relative">
-                <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                <div className="w-80 h-80 mx-auto rounded-2xl overflow-hidden shadow-2xl border border-gray-700">
                   <img 
                     src="/images/Personal_PIC.jpg" 
                     alt="Ahmed Mamdouh El Najjar"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center shadow-lg border-4 border-gray-900">
                   <User className="w-12 h-12 text-white" />
                 </div>
               </div>
             </div>
             <div className="order-1 md:order-2">
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <h2 className="text-4xl font-bold text-white mb-6">About Me</h2>
+              <p className="text-gray-300 mb-6 leading-relaxed">
                 Hi, I'm Ahmed Mamdouh, a Data Scientist with a Computer Engineering background from Helwan University. 
                 I specialize in turning raw data into actionable insights and building AI models that solve real-world problems. 
                 With experience in database design, data preprocessing, and deploying machine learning models, I act as the 
                 bridge between raw data and practical solutions.
               </p>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 I'm passionate about creating impactful projects, from recommendation systems to predictive analytics, 
                 always with the goal of helping businesses and individuals make smarter decisions.
               </p>
               
-              <div className="bg-gradient-to-br from-blue-50 to-teal-50 p-8 rounded-2xl mt-8">
+              <div className="bg-gradient-to-br from-gray-800 to-blue-900/50 p-8 rounded-2xl mt-8 border border-gray-700">
                 <div className="flex items-center mb-4">
                   <User className="w-6 h-6 text-blue-600 mr-3" />
-                  <h3 className="text-xl font-semibold text-gray-900">Quick Facts</h3>
+                  <h3 className="text-xl font-semibold text-white">Quick Facts</h3>
                 </div>
-                <ul className="space-y-3 text-gray-600">
+                <ul className="space-y-3 text-gray-300">
                   <li className="flex items-center">
                     <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
                     Computer Engineering Student
@@ -356,25 +358,25 @@ function App() {
       </section>
 
       {/* Education Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-800">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Education</h2>
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Education</h2>
+          <div className="bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-700">
             <div className="flex items-start">
-              <div className="bg-blue-100 p-3 rounded-lg mr-6">
+              <div className="bg-blue-900/50 p-3 rounded-lg mr-6 border border-blue-700">
                 <GraduationCap className="w-8 h-8 text-blue-600" />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">B.Sc. in Computer Engineering</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">B.Sc. in Computer Engineering</h3>
                 <p className="text-blue-600 font-semibold mb-2">Faculty of Engineering, Helwan University</p>
-                <p className="text-gray-600 mb-4">Computer and Systems Department (Ongoing)</p>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">Relevant Courses:</h4>
+                <p className="text-gray-300 mb-4">Computer and Systems Department (Ongoing)</p>
+                <div className="bg-gray-800 p-4 rounded-lg border border-gray-700">
+                  <h4 className="font-semibold text-white mb-2">Relevant Courses:</h4>
                   <div className="flex flex-wrap gap-2">
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Data Science</span>
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Electronic Measurements & Sensors</span>
+                    <span className="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700">Data Science</span>
+                    <span className="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700">Machine Learning</span>
+                    <span className="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700">Artificial Intelligence</span>
+                    <span className="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700">Electronic Measurements & Sensors</span>
                   </div>
                 </div>
               </div>
@@ -384,14 +386,14 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-white">
+      <section id="skills" className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Skills & Expertise</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl">
+            <div className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 p-6 rounded-2xl border border-blue-700/50">
               <Code className="w-8 h-8 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Programming</h3>
-              <ul className="text-gray-600 space-y-1">
+              <h3 className="text-xl font-bold text-white mb-3">Programming</h3>
+              <ul className="text-gray-300 space-y-1">
                 <li>Python</li>
                 <li>SQL</li>
                 <li>HTML/CSS</li>
@@ -400,10 +402,10 @@ function App() {
               </ul>
             </div>
             
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-2xl">
+            <div className="bg-gradient-to-br from-teal-900/50 to-teal-800/50 p-6 rounded-2xl border border-teal-700/50">
               <Brain className="w-8 h-8 text-teal-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Machine Learning</h3>
-              <ul className="text-gray-600 space-y-1">
+              <h3 className="text-xl font-bold text-white mb-3">Machine Learning</h3>
+              <ul className="text-gray-300 space-y-1">
                 <li>Data Cleaning</li>
                 <li>Preprocessing</li>
                 <li>Feature Engineering</li>
@@ -412,10 +414,10 @@ function App() {
               </ul>
             </div>
             
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl">
+            <div className="bg-gradient-to-br from-purple-900/50 to-purple-800/50 p-6 rounded-2xl border border-purple-700/50">
               <Settings className="w-8 h-8 text-purple-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Tools & Libraries</h3>
-              <ul className="text-gray-600 space-y-1">
+              <h3 className="text-xl font-bold text-white mb-3">Tools & Libraries</h3>
+              <ul className="text-gray-300 space-y-1">
                 <li>Pandas</li>
                 <li>NumPy</li>
                 <li>Scikit-learn</li>
@@ -424,10 +426,10 @@ function App() {
               </ul>
             </div>
             
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl">
+            <div className="bg-gradient-to-br from-green-900/50 to-green-800/50 p-6 rounded-2xl border border-green-700/50">
               <Database className="w-8 h-8 text-green-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Other Skills</h3>
-              <ul className="text-gray-600 space-y-1">
+              <h3 className="text-xl font-bold text-white mb-3">Other Skills</h3>
+              <ul className="text-gray-300 space-y-1">
                 <li>Database Design</li>
                 <li>Data Visualization</li>
                 <li>Model Deployment</li>
@@ -440,18 +442,18 @@ function App() {
       </section>
 
       {/* Work Experience */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-800">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Work Experience</h2>
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Work Experience</h2>
+          <div className="bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-700">
             <div className="flex items-start">
-              <div className="bg-green-100 p-3 rounded-lg mr-6">
+              <div className="bg-green-900/50 p-3 rounded-lg mr-6 border border-green-700">
                 <Briefcase className="w-8 h-8 text-green-600" />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Freelance Data Scientist</h3>
+                <h3 className="text-2xl font-bold text-white mb-2">Freelance Data Scientist</h3>
                 <p className="text-green-600 font-semibold mb-4">Upwork & Khamsat</p>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed">
                   Helping startups and data-driven companies build predictive and analytical models, 
                   from data preprocessing to deployment. Successfully delivered multiple projects 
                   involving machine learning model development, database optimization, and AI-powered solutions.
@@ -463,75 +465,75 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Services Offered</h2>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Services Offered</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 p-6 rounded-2xl hover:shadow-lg transition-shadow border border-blue-700/50">
               <div className="bg-blue-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Settings className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Data Cleaning & Preprocessing</h3>
-              <p className="text-gray-600">Transform raw, messy data into clean, structured datasets ready for analysis and modeling.</p>
+              <h3 className="text-xl font-bold text-white mb-3">Data Cleaning & Preprocessing</h3>
+              <p className="text-gray-300">Transform raw, messy data into clean, structured datasets ready for analysis and modeling.</p>
             </div>
             
-            <div className="bg-gradient-to-br from-teal-50 to-teal-100 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-teal-900/50 to-teal-800/50 p-6 rounded-2xl hover:shadow-lg transition-shadow border border-teal-700/50">
               <div className="bg-teal-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Brain className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">ML Model Development</h3>
-              <p className="text-gray-600">Build custom machine learning models tailored to your specific business needs and objectives.</p>
+              <h3 className="text-xl font-bold text-white mb-3">ML Model Development</h3>
+              <p className="text-gray-300">Build custom machine learning models tailored to your specific business needs and objectives.</p>
             </div>
             
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-purple-900/50 to-purple-800/50 p-6 rounded-2xl hover:shadow-lg transition-shadow border border-purple-700/50">
               <div className="bg-purple-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">AI-Powered Recommendations</h3>
-              <p className="text-gray-600">Develop intelligent recommendation systems that personalize user experiences and drive engagement.</p>
+              <h3 className="text-xl font-bold text-white mb-3">AI-Powered Recommendations</h3>
+              <p className="text-gray-300">Develop intelligent recommendation systems that personalize user experiences and drive engagement.</p>
             </div>
             
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-green-900/50 to-green-800/50 p-6 rounded-2xl hover:shadow-lg transition-shadow border border-green-700/50">
               <div className="bg-green-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Award className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Predictive Analytics</h3>
-              <p className="text-gray-600">Forecast trends and outcomes using advanced statistical models and machine learning techniques.</p>
+              <h3 className="text-xl font-bold text-white mb-3">Predictive Analytics</h3>
+              <p className="text-gray-300">Forecast trends and outcomes using advanced statistical models and machine learning techniques.</p>
             </div>
             
-            <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-orange-900/50 to-orange-800/50 p-6 rounded-2xl hover:shadow-lg transition-shadow border border-orange-700/50">
               <div className="bg-orange-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <ExternalLink className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Model Deployment</h3>
-              <p className="text-gray-600">Deploy machine learning models as web APIs and applications for real-world use.</p>
+              <h3 className="text-xl font-bold text-white mb-3">Model Deployment</h3>
+              <p className="text-gray-300">Deploy machine learning models as web APIs and applications for real-world use.</p>
             </div>
             
-            <div className="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <div className="bg-gradient-to-br from-red-900/50 to-red-800/50 p-6 rounded-2xl hover:shadow-lg transition-shadow border border-red-700/50">
               <div className="bg-red-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Database className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Database Design & Optimization</h3>
-              <p className="text-gray-600">Design efficient database schemas and optimize queries for better performance.</p>
+              <h3 className="text-xl font-bold text-white mb-3">Database Design & Optimization</h3>
+              <p className="text-gray-300">Design efficient database schemas and optimize queries for better performance.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gray-50">
+      <section id="projects" className="py-20 bg-gray-800">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {projects.map((project, index) => (
-              <div key={project.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+              <div key={project.id} className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-700">
                 <div className="relative">
                   <img 
                     src={project.images[0]} 
                     alt={project.title}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover border-b border-gray-700"
                   />
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium text-gray-700">
+                  <div className="absolute top-4 right-4 bg-gray-900/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-medium text-gray-300 border border-gray-700">
                     Project {index + 1}
                   </div>
                   {project.images.length > 1 && (
@@ -542,26 +544,26 @@ function App() {
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 line-clamp-3">
+                  <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
+                  <p className="text-gray-300 mb-4 line-clamp-3">
                     {project.shortDescription}
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                      <span key={techIndex} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm font-medium">
+                      <span key={techIndex} className="bg-blue-900/50 text-blue-300 px-2 py-1 rounded text-sm font-medium border border-blue-700">
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 3 && (
-                      <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded text-sm">
+                      <span className="bg-gray-800 text-gray-400 px-2 py-1 rounded text-sm border border-gray-600">
                         +{project.technologies.length - 3} more
                       </span>
                     )}
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center text-sm text-gray-500">
+                    <div className="flex items-center text-sm text-gray-400">
                       <TrendingUp className="w-4 h-4 mr-1" />
                       <span>{Object.values(project.metrics)[0]}</span>
                     </div>
@@ -579,10 +581,10 @@ function App() {
           </div>
           
           <div className="text-center">
-            <p className="text-gray-600 mb-4">Interested in seeing more projects or discussing a collaboration?</p>
+            <p className="text-gray-300 mb-4">Interested in seeing more projects or discussing a collaboration?</p>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition-colors"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors border border-blue-500"
             >
               Get In Touch
             </button>
@@ -591,41 +593,45 @@ function App() {
       </section>
 
       {/* Achievements Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">Achievements</h2>
+          <h2 className="text-4xl font-bold text-white mb-12 text-center">Achievements</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-2xl">
+            <div className="bg-gradient-to-br from-yellow-900/50 to-yellow-800/50 p-6 rounded-2xl border border-yellow-700/50">
               <div className="flex items-center mb-4">
                 <Star className="w-6 h-6 text-yellow-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Project Excellence</h3>
+                <h3 className="text-xl font-semibold text-white">Project Excellence</h3>
               </div>
-              <p className="text-gray-600">Delivered multiple academic and freelance projects successfully with high client satisfaction ratings.</p>
+              <p className="text-gray-300">Delivered multiple academic and freelance projects successfully with high client satisfaction ratings.</p>
             </div>
             
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl">
+            <div className="bg-gradient-to-br from-blue-900/50 to-blue-800/50 p-6 rounded-2xl border border-blue-700/50">
               <div className="flex items-center mb-4">
                 <Award className="w-6 h-6 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Academic Recognition</h3>
+                <h3 className="text-xl font-semibold text-white">Academic Recognition</h3>
               </div>
-              <p className="text-gray-600">Recognized by instructors for excellence in Machine Learning course projects and innovative solutions.</p>
+              <p className="text-gray-300">Recognized by instructors for excellence in Machine Learning course projects and innovative solutions.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-blue-600">
+      <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl animate-pulse"></div>
+        </div>
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Let's Build Something Intelligent Together</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-gray-300 mb-8">
             Reach out to me for collaborations or freelance projects. I'm always excited to work on challenging data science problems.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a 
               href="mailto:ahmed.mamdouh.sadek@example.com" 
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center"
+              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center shadow-lg"
             >
               <Mail className="w-5 h-5 mr-2" />
               ahmedmamdouhelnajjar@hotmail.com
@@ -635,7 +641,7 @@ function App() {
     href="https://github.com/AhmedELNajjar-dev" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="bg-blue-700 text-white p-3 rounded-lg hover:bg-blue-800 transition-colors"
+    className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-700 transition-colors border border-gray-600"
   >
     <Github className="w-5 h-5" />
   </a>
@@ -643,23 +649,23 @@ function App() {
     href="https://www.linkedin.com/in/ahmed-el-najjar" 
     target="_blank" 
     rel="noopener noreferrer"
-    className="bg-blue-700 text-white p-3 rounded-lg hover:bg-blue-800 transition-colors"
+    className="bg-blue-700 text-white p-3 rounded-lg hover:bg-blue-600 transition-colors border border-blue-600"
   >
     <Linkedin className="w-5 h-5" />
   </a>
 </div>
           </div>
           
-          <p className="text-blue-100">
+          <p className="text-gray-300">
             Available for freelance projects and full-time opportunities
           </p>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-black text-white py-8 border-t border-gray-800">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <p>&copy; 2024 Ahmed Mamdouh Sadek. All rights reserved.</p>
+          <p className="text-gray-400">&copy; 2024 Ahmed Mamdouh Sadek. All rights reserved.</p>
         </div>
       </footer>
       
