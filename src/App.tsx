@@ -1,23 +1,19 @@
 import React from 'react';
-import { 
-  User, 
-  GraduationCap, 
-  Code, 
-  Briefcase, 
-  Settings, 
-  Database, 
-  Brain, 
-  Mail, 
+import {
+  User,
+  GraduationCap,
+  Code,
+  Settings,
+  Database,
+  Brain,
+  Mail,
   ExternalLink,
   Github,
   Linkedin,
   ChevronDown,
-  Star,
   Award,
   Target,
   ArrowRight,
-  Calendar,
-  Users,
   TrendingUp
 } from 'lucide-react';
 
@@ -92,8 +88,38 @@ function App() {
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Database-Gym-Management-System'
+    },
+    {
+      id: 'network-intrusion-detection',
+      title: 'Network Intrusion Detection System',
+      shortDescription: 'An intelligent ML-based Network Intrusion Detection System achieving 99.88% accuracy using behavioral analysis on CICIDS-2017 dataset.',
+      fullDescription: 'A Machine Learning-driven Network Intrusion Detection System (NIDS) built for the Digital Egypt Pioneers Initiative that learns how attacks behave rather than memorizing signatures. Trained on CICIDS-2017 dataset containing 2.8M network flow records with 14 distinct attack vectors including DoS, DDoS, PortScan, Brute Force, Web Attacks, Botnet, and Infiltration. The system implements comprehensive data cleaning (fixing 12-hour clock bug, removing duplicates), advanced feature engineering (reducing 79 features to 26 critical ones), and strategic class balancing to detect rare attacks. Built with Random Forest classifier optimized through RandomizedSearchCV, achieving real-time detection capability with 1.3ms inference time.',
+      technologies: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Random Forest', 'Streamlit', 'Matplotlib', 'Seaborn', 'CICFlowMeter'],
+      features: [
+        'Behavioral-based attack detection using machine learning',
+        'Critical data quality fixes: 12-hour clock bug, strategic deduplication',
+        'Advanced feature engineering: 79 → 26 optimized features (67% reduction)',
+        '80/20 class balancing strategy preserving all rare attack samples',
+        'Random Forest model with 5-fold cross-validation and hyperparameter tuning',
+        'Real-time threat detection dashboard with Red Team/Blue Team simulator',
+        'Comprehensive attack coverage: DoS, DDoS, PortScan, Brute Force, Web Attacks, Botnet, Infiltration',
+        'Production-ready deployment with 1.3ms inference time'
+      ],
+      metrics: {
+        accuracy: '99.88%',
+        macroF1: '96.47%',
+        inferenceTime: '1.3ms per flow'
+      },
+      images: [
+        'https://via.placeholder.com/800x600/1e3a8a/ffffff?text=NIDS+Dashboard',
+        'https://via.placeholder.com/800x600/1e40af/ffffff?text=Attack+Detection',
+        'https://via.placeholder.com/800x600/1e293b/ffffff?text=Real-time+Monitoring',
+        'https://via.placeholder.com/800x600/0f172a/ffffff?text=Feature+Analysis'
+      ],
+      demoUrl: '#',
+      codeUrl: 'https://github.com/AhmedELNajjar-dev/Depi-Final-Project'
     }
-    
+
   ];
 
   const ProjectModal = ({ project, onClose }: { project: typeof projects[0], onClose: () => void }) => {
@@ -441,29 +467,6 @@ function App() {
         </div>
       </section>
 
-      {/* Work Experience */}
-      <section className="py-20 bg-gray-800">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Work Experience</h2>
-          <div className="bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-700">
-            <div className="flex items-start">
-              <div className="bg-green-900/50 p-3 rounded-lg mr-6 border border-green-700">
-                <Briefcase className="w-8 h-8 text-green-600" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-2">Freelance Data Scientist</h3>
-                <p className="text-green-600 font-semibold mb-4">Upwork & Khamsat</p>
-                <p className="text-gray-300 leading-relaxed">
-                  Helping startups and data-driven companies build predictive and analytical models, 
-                  from data preprocessing to deployment. Successfully delivered multiple projects 
-                  involving machine learning model development, database optimization, and AI-powered solutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Section */}
       <section id="services" className="py-20 bg-gray-900">
         <div className="max-w-6xl mx-auto px-6">
@@ -588,30 +591,6 @@ function App() {
             >
               Get In Touch
             </button>
-          </div>
-        </div>
-      </section>
-
-      {/* Achievements Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Achievements</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-amber-900/50 to-amber-800/50 p-6 rounded-2xl border border-amber-700/50">
-              <div className="flex items-center mb-4">
-                <Star className="w-6 h-6 text-amber-600 mr-3" />
-                <h3 className="text-xl font-semibold text-white">Project Excellence</h3>
-              </div>
-              <p className="text-gray-300">Delivered multiple academic and freelance projects successfully with high client satisfaction ratings.</p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-slate-900/50 to-slate-800/50 p-6 rounded-2xl border border-slate-700/50">
-              <div className="flex items-center mb-4">
-                <Award className="w-6 h-6 text-slate-600 mr-3" />
-                <h3 className="text-xl font-semibold text-white">Academic Recognition</h3>
-              </div>
-              <p className="text-gray-300">Recognized by instructors for excellence in Machine Learning course projects and innovative solutions.</p>
-            </div>
           </div>
         </div>
       </section>
