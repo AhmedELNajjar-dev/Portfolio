@@ -624,10 +624,7 @@ function App() {
   >
     <Github className="w-5 h-5" />
   </a>
-                  href="https://www.linkedin.com/in/ahmed-el-najjar" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="bg-sky-700 text-white p-3 rounded-lg hover:bg-sky-600 transition-colors border border-sky-600"
+
   <a 
 
   >
