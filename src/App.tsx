@@ -612,25 +612,28 @@ function App() {
               href="mailto:ahmedmamdouhelnajjar@hotmail.com" 
               className="bg-white text-sky-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center shadow-lg"
             >
-              <Mail className="w-5 h-5 mr-2" />
+  <Mail className="w-5 h-5 mr-2" />
               ahmedmamdouhelnajjar@hotmail.com
             </a>
             <div className="flex gap-4">
-  <a 
-    href="https://github.com/AhmedELNajjar-dev" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-700 transition-colors border border-gray-600"
-  >
-    <Github className="w-5 h-5" />
-  </a>
+              <a 
+                href="https://github.com/AhmedELNajjar-dev" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-700 transition-colors border border-gray-600"
+              >
+                <Github className="w-5 h-5" />
+              </a>
 
-  <a 
-
-  >
-    <Linkedin className="w-5 h-5" />
-  </a>
-</div>
+              <a 
+                href="https://www.linkedin.com/in/ahmed-el-najjar/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-700 transition-colors border border-gray-600"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
           
           <p className="text-gray-300">
