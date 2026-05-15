@@ -92,8 +92,36 @@ function App() {
       ],
       demoUrl: '#',
       codeUrl: 'https://github.com/AhmedELNajjar-dev/Database-Gym-Management-System'
+    },
+    {
+      id: 'malwarescope',
+      title: 'MalwareScope — AI-Powered Malware Analysis Platform',
+      shortDescription: 'An AI-powered malware analysis platform that automates static, dynamic, YARA, packer, and string analysis into interactive HTML threat intelligence reports.',
+      fullDescription: 'MalwareScope is a cybersecurity course project built as an AI-powered malware analysis platform. It allows analysts to upload a suspicious binary and automatically runs a multi-stage analysis pipeline covering SHA-256 hashing, UPX packer detection, FLOSS string extraction, VirusTotal static and dynamic data, YARA rule matching, aggregation, LLM-based insight generation, and HTML report creation. The platform uses a Streamlit GUI with a live 10-step pipeline tracker and produces two outputs per scan: an AI-generated executive summary dashboard and a full technical report.',
+      technologies: ['Python', 'Streamlit', 'LangGraph', 'LangChain', 'Groq API', 'LLaMA 3.3 70B', 'VirusTotal API', 'YARA', 'FLOSS', 'UPX', 'HTML', 'CSS'],
+      features: [
+        'Single-file suspicious binary upload through a Streamlit GUI',
+        'Automated 10-stage LangGraph pipeline: Hash, UPX, FLOSS, VirusTotal, Static, Dynamic, YARA, Aggregation, Insight, and Report',
+        'Static PE inspection including sections, imports, exports, entropy, hashes, resources, packer data, and file type indicators',
+        'Dynamic and cloud-based intelligence using VirusTotal API v3, including AV ratios, sandbox verdicts, sigma rules, threat labels, and network indicators',
+        'YARA signature matching with severity classification and rule metadata extraction',
+        'FLOSS-based string extraction for URLs, IP addresses, commands, and suspicious strings',
+        'Groq LLM integration for structured threat intelligence summaries and premium HTML dashboard generation',
+        'Dual report output: AI-generated Summary Report and programmatic Full Technical Report'
+      ],
+      metrics: {
+        pipeline: '10-stage analysis',
+        reports: '2 HTML reports',
+        tools: '6 analysis tools'
+      },
+      images: [
+        '/images/MalwareScope1.png',
+        '/images/MalwareScope2.png',
+        '/images/MalwareScope3.png'
+      ],
+      demoUrl: '#',
+      codeUrl: '#'
     }
-    
   ];
 
   const ProjectModal = ({ project, onClose }: { project: typeof projects[0], onClose: () => void }) => {
