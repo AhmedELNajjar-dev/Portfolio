@@ -346,14 +346,14 @@ function App() {
             <div className="order-1 md:order-2">
               <h2 className="text-4xl font-bold text-white mb-6">About Me</h2>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Hi, I'm Ahmed Mamdouh, a Data Scientist with a Computer Engineering background from Helwan University. 
-                I specialize in turning raw data into actionable insights and building AI models that solve real-world problems. 
-                With experience in database design, data preprocessing, and deploying machine learning models, I act as the 
-                bridge between raw data and practical solutions.
+                Hi, I'm Ahmed Mamdouh,Computer Engineering student specializing in Data Science, Machine Learning, and AI-driven systems, with hands-on experience building intelligent applications that combine analytics, automation, and cybersecurity concepts.
+
+Experienced in developing machine learning models, data pipelines, dashboards, and AI-powered applications using Python, SQL, scikit-learn, and Power BI. Built practical systems including a Network Intrusion Detection System (NIDS) and an AI-powered malware analysis platform integrating LLMs, threat intelligence APIs, and automated reporting workflows.
+
+Strong foundation in problem-solving, software engineering, and system design, with a focus on building scalable, data-driven solutions that deliver measurable insights and operational value.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                I'm passionate about creating impactful projects, from recommendation systems to predictive analytics, 
-                always with the goal of helping businesses and individuals make smarter decisions.
+               
               </p>
               
               <div className="bg-gradient-to-br from-gray-800 to-blue-900/50 p-8 rounded-2xl mt-8 border border-gray-700">
